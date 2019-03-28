@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fit.ah.twitter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".helper.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Tweets.TweetPreviewActivity"
+            android:theme="@style/twitter_theme_actionbar.">
+        </activity>
+        <activity android:name=".ProcessActivity" />
+        <activity
+            android:name=".Profile.EditProfileActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Registration.RegistrationActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/twitter_theme_actionbar.">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".InterestsActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Dashboard.DashboardActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Tweets.ReplyActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Messages.MessagesActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".NotificationsActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity android:name=".ExploreActivity" />
+        <activity
+            android:name=".Search.SearchActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Favorites.FavoritesActivity"
+            android:theme="@style/twitter_theme_actionbar." />
+        <activity
+            android:name=".Tweets.TweetActivity"
+            android:theme="@style/twitter_theme_actionbar."
+            android:windowSoftInputMode="stateAlwaysVisible" />
+    </application>
+
+</manifest>

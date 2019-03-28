@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fit.ah.twitter.ExploreActivity"
+    android:background="@drawable/gradient_background"
+    android:theme="@style/twitter_theme_actionbar.">
+
+    <fragment android:name="com.fit.ah.twitter.Trends.TrendsFragment"
+        android:id="@+id/trends_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.BottomNavigationView
+        style="@style/Widget.Design.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#233448"
+        android:scrollbars="none"
+        app:itemIconTint="@color/twitterblue_color"
+        app:itemTextColor="@color/text_color_primary"
+        app:menu="@menu/main_menu"
+        android:id="@+id/bottomnavbar"
+
+        />
+
+</RelativeLayout>

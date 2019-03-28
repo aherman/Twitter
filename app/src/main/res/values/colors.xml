@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2898bd</color>
+    <color name="accent_material_light">#127190</color>
+    <color name="primary_dark_material_light">#073b53</color>
+    <color name="primary_material_light">#c8f0fd</color>
+    <color name="background_material_light">#003557</color>
+    <color name="foreground_material_light">#c1e7f9</color>
+    <color name="primary_text_material_dark">#195d74</color>
+    <color name="secondary_text_material_dark">#b3195d76</color>
+    <color name="text_color_secondary">#b2a8cbd7</color>
+    <color name="text_color_primary">#f8fdff</color>
+    <color name="holo_light_primary">#c8f0fd</color>
+    <color name="holo_light_primary_dark">#073b53</color>
+    <color name="background_holo_light">#1c2836</color>
+    <color name="statusbar_color">#000000</color>
+    <color name="actionbar_color">#233448</color>
+    <color name="twitterblue_color">#38aced</color>
+    <color name="validation_red">#DD0000</color>
+    <color name="my_gray">#999999</color>
+    <color name="dark_blue">#0e1e2b</color>
+</resources>

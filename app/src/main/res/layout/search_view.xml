@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Search tweets or people"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@color/text_color_primary">
+
+        <requestFocus/>
+    </EditText>
+
+</LinearLayout>

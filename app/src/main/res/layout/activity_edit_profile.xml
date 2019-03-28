@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.EditProfileActivity"
+    android:background="#141d26"
+    android:theme="@style/twitter_theme_actionbar.">
+
+    <include layout="@layout/nav_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_actionbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_actionbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etNickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="New Nickname"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_color_primary" />
+
+                    <TextView
+                        android:id="@+id/tvValNickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nickname field is blank!"
+                        android:textAlignment="center"
+                        android:textColor="@color/validation_red"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPicture"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgPreview"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="Change profile photo"
+                android:textColor="@color/text_color_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgPreview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/layout1"
+                android:layout_centerInParent="true"
+                android:layout_margin="25dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/twitterblue_color"
+                app:civ_border_overlay="true"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/btnHeaderPicture"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerImageLayout"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="Change header photo"
+                android:textColor="@color/text_color_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_below="@id/btnPicture"
+                android:layout_margin="25dp"
+                android:id="@+id/headerImageLayout"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/twitterblue_color">
+                <ImageView
+                    android:id="@+id/imgHeaderPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/twitterblue_color"
+                    android:padding="2dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnHeaderPicture"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_button"
+                android:text="Apply"
+                android:textColor="@color/text_color_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

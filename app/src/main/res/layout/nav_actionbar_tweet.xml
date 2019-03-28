@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_actionbar_tweet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#233448"
+    android:theme="@style/twitter_theme_actionbar.">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp">
+
+        <Button
+            android:id="@+id/btnTweet"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:text="Tweet"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tweetLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="21dp"
+            android:layout_toStartOf="@+id/btnTweet"
+            android:text="140"
+            android:textColor="@color/text_color_primary"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tweetImgProfile"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/tweetLength"
+            android:src="@drawable/image_icon"
+            android:tint="@color/twitterblue_color" />
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.Toolbar>

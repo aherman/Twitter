@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fit.ah.twitter.Chat.ChatActivity"
+    android:background="#141d26"
+    android:id="@+id/parentLayout">
+
+    <include layout="@layout/nav_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_actionbar"></include>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nav_actionbar"
+        android:id="@+id/swipeRefresh">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:id="@+id/lista"
+                android:clipToPadding="false"
+                android:paddingBottom="60dp"
+                android:stackFromBottom="true"></ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/holo_light_primary_dark"
+        android:padding="5dp"
+        android:id="@+id/footer_bar"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/msgText"
+            android:theme="@style/twitter_theme_actionbar."/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/send_icon"
+            android:scaleType="fitEnd"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/sendButton"
+            android:tint="@color/twitterblue_color"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

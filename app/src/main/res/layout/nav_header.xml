@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_holo_light"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        android:orientation="vertical"
+        android:id="@+id/mainLinearLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/headerImgProfile"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nickname no.1"
+            android:id="@+id/headerNickname"
+            android:textColor="#EEEEEE"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:paddingTop="10dp"></TextView>
+
+        <!--suppress AndroidDomInspection -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@username123"
+            android:id="@+id/headerUsername"
+            android:textColor="#AAAAAA" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:id="@+id/headerFollowingCount"
+                android:textColor="#EEEEEE"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:id="@+id/followingString"
+                android:textColor="#999999"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:id="@+id/headerFollowersCount"
+                android:textColor="#EEEEEE"
+                android:textStyle="bold"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:id="@+id/followersString"
+                android:textColor="#999999"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape_line"
+        android:layout_below="@id/mainLinearLayout"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Twitter</string>
+    <string name="app_logo">twitter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_title">Home</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="messages_title">Messages</string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="explore_title">Explore</string>
+    <string name="search_title">Search</string>
+    <string name="profile_title">Profile</string>
+    <string name="settings_title">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="session_username"/>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/counter"
+            android:textColor="#999999"
+            android:textSize="25sp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="22sp"
+            app:autoSizeMaxTextSize="25sp"
+            app:autoSizeStepGranularity="2sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tweetWord"
+                    android:textColor="#EEEEEE"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tweetCount"
+                    android:textColor="#AAAAAA"
+                    android:paddingLeft="1dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

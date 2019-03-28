@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity"
+    >
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title=""
+        ></item>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+
+        android:title=""></item>
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/notifications"
+
+        android:title=""></item>
+    <item
+        android:id="@+id/directmessages"
+        android:icon="@drawable/dm"
+
+        android:title=""></item>
+
+</menu>

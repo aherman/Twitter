@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fit.ah.twitter.InterestsActivity"
+    android:background="@drawable/gradient_background">
+
+    <include layout="@layout/nav_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_actionbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nav_actionbar">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            app:srcCompat="@drawable/twitter_logo" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="Find your friends right now!"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:orientation="horizontal"
+            android:background="@drawable/transparent_bar"
+            android:id="@+id/searchView" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/searchView"
+            android:layout_marginTop="15dp">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lista"></ListView>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/rounded_button"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_primary"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
